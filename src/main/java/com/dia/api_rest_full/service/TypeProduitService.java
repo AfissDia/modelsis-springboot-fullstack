@@ -1,6 +1,5 @@
 package com.dia.api_rest_full.service;
 
-import com.dia.api_rest_full.model.Produit;
 import com.dia.api_rest_full.model.TypeProduit;
 
 import java.util.List;

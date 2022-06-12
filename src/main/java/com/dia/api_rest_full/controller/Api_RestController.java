@@ -1,7 +1,8 @@
-package com.dia.api_rest_full;
+package com.dia.api_rest_full.controller;
 
 import com.dia.api_rest_full.model.Produit;
 import com.dia.api_rest_full.service.ProduitService;
+import com.dia.api_rest_full.service.TypeProduitService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -12,6 +13,8 @@ import java.util.List;
 @RestController
 public class Api_RestController {
     @Autowired ProduitService produitService;
+    @Autowired
+    TypeProduitService typeProduitService;
 
     @RequestMapping(method = RequestMethod.GET, value = "/produits")
     public List<Produit> getlldProduit(){

@@ -1,19 +1,18 @@
-package com.dia.api_rest_full.service;
-import com.dia.api_rest_full.dao.TypeProduitRepository;
+package com.dia.api_rest_full.serviceImpl;
 import com.dia.api_rest_full.model.TypeProduit;
+import com.dia.api_rest_full.repository.TypeProduitRepository;
+import com.dia.api_rest_full.service.TypeProduitService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
-public class TypeProduitServiceImpl implements TypeProduitService{
+public class TypeProduitServiceImpl implements TypeProduitService {
     @Autowired
     private TypeProduitRepository typeProduitRepository;
-
     @Override
     public List<TypeProduit> getAllTypeProduit() {
-
         return typeProduitRepository.findAll();
     }
 

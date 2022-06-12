@@ -1,4 +1,4 @@
-package com.dia.api_rest_full.dao;
+package com.dia.api_rest_full.repository;
 
 import com.dia.api_rest_full.model.Produit;
 import org.springframework.data.jpa.repository.JpaRepository;

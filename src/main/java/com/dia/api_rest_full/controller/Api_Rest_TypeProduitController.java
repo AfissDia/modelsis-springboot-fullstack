@@ -1,4 +1,4 @@
-package com.dia.api_rest_full;
+package com.dia.api_rest_full.controller;
 
 import com.dia.api_rest_full.model.TypeProduit;
 import com.dia.api_rest_full.service.TypeProduitService;
